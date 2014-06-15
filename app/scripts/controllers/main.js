@@ -19,7 +19,7 @@ angular.module('summitseyeApp')
 		, videoTexture
 		, projection
 		, terrainSize = 60 // 60 x 60 km
-        , heightFactor = terrainSize / 12;
+        , heightFactor = terrainSize ;
 
 	$scope.x = 0;
 	$scope.y = 90;
@@ -66,17 +66,27 @@ angular.module('summitseyeApp')
 
 	    material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 	    material.side = THREE.DoubleSide;
-	    geometry = new THREE.PlaneGeometry(24, 24);
+	    geometry = new THREE.PlaneGeometry(60000,60000);
 	    grass = new THREE.Mesh( geometry, material );
 	    grass.name = "grass";
 	    scene.add( grass );
 	    
-	    camera.position.z = 5;
+	    camera.position.z = 2;
 	    camera.position.y = 0;
-
-	    _config2();
+		getLocation( function( p_coordinates ){
+			_config2( p_coordinates );
+		});
+	    
     }
     
+
+function getLocation( p_callback ) {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function( position ){
+        	p_callback( [position.coords.latitude, position.coords.longitude] );
+        });
+    }
+}
     function _videoDetection(sourceInfos){
 
 		var	  videoSource = []
@@ -126,33 +136,23 @@ angular.module('summitseyeApp')
 
  	// Change coordinate space
     function translate(point) {
-        return [point[0] - (terrainSize / 2), (terrainSize / 2) - point[1]];
+        return point;
     }
 
-	function _config2(){
+	function _config2( p_coordinates ){
 		
 		var width  = window.innerWidth,
         height = window.innerHeight;
-        
-/*
-    var scene = new THREE.Scene();
-    scene.add(new THREE.AmbientLight(0xeeeeee));
+        //camera.position.set(0, -terrainSize / 2, terrainSize / 2);
 
-    var camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
-    camera.position.set(0, -terrainSize / 2, terrainSize / 2);
-
-    var renderer = new THREE.WebGLRenderer();
-    renderer.setSize(width, height);
-
-    var terrainLoader = new THREE.TerrainLoader();
-    terrainLoader.load('../assets/jotunheimen512.bin', createTerrain);
-*/
     projection = d3.geo.transverseMercator()
-        .translate([terrainSize / 2, terrainSize / 2])
-        .scale(terrainSize * 1)  
-        .rotate([-9, 0, 0])
-        .center([-0.714, 61.512]);        
+        .translate([terrainSize/2 , terrainSize/2 ])
+        .scale(terrainSize)  
+        //.rotate([, 0, 0])
+        //.rotate([0,90,0])
+        .center([-3.68533, 40.46836]);        
 
+console.log(p_coordinates);
         var geometry = new THREE.PlaneGeometry();
         	
         d3.xml('aux/waypoints.gpx', 'application/xml', gpxParser);
@@ -195,15 +195,17 @@ function buildAxis( src, dst, colorHex, dashed ) {
 }
 
     function gpxParser(gpx) {
+
+    	
         var points = gpx.getElementsByTagName('wpt'),
             geometry = new THREE.Geometry();
             var x =0;
         for (x = 0; x < points.length; x++) { // points.length
             var point = points[x],
-                alt = 0,// parseInt(point.getElementsByTagName('ele')[0].firstChild.nodeValue),
+                alt = 10,// parseInt(point.getElementsByTagName('ele')[0].firstChild.nodeValue),
                 lat = parseFloat(point.getAttribute('lat')),
                 lng = parseFloat(point.getAttribute('lon')),
-                coord = translate(projection([lng, lat]));
+                coord = projection([lng, lat]);
 
             geometry.vertices.push(new THREE.Vector3(coord[0], coord[1], (alt / 2470 * heightFactor) + (0.01 * heightFactor))); 
         }
@@ -217,10 +219,28 @@ function buildAxis( src, dst, colorHex, dashed ) {
         // create the particle system
 		var geometrySystem = new THREE.ParticleSystem(geometry, gMaterial);
 
-		// add it to the scene
-		scene.add(geometrySystem);
-		 var axes = buildAxes( 1000 );
+		var axes = buildAxes( 10000 );
 		scene.add(axes);
+
+
+var geometry2 = new THREE.Geometry();
+
+var  alt2 = 10,// parseInt(point.getElementsByTagName('ele')[0].firstChild.nodeValue),
+  coord2 = projection(translate([-3.68533, 40.46836]));
+geometry2.vertices.push(new THREE.Vector3(coord2[0], coord2[1], (alt2 / 2470 * heightFactor) + (0.01 * heightFactor))); 
+coord2 = projection(translate([-3.69999, 40.36570]));
+geometry2.vertices.push(new THREE.Vector3(coord2[0], coord2[1], (alt2 / 2470 * heightFactor) + (0.01 * heightFactor))); 
+var gMaterial2 = new THREE.ParticleBasicMaterial({
+      			color: 0x000FF,
+      			size: 2
+    		});
+        // create the particle system
+		var geometrySystem2 = new THREE.ParticleSystem(geometry2, gMaterial2);
+
+		// add it to the scene
+		scene.add(geometrySystem2);
+		scene.add(geometrySystem);
+		 
     }
 
   });
