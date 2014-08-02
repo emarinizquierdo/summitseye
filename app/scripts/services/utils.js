@@ -45,18 +45,18 @@ angular.module('summitseyeApp')
     return axis;
   }
 
-  _utils.videoDetection =function(sourceInfos){
+  _utils.videoDetection = function( p_video, sourceInfos){
 
     var   videoSource = []
       , _j = 0;
 
     for (var i = 0; i != sourceInfos.length; ++i) {
+      
         var sourceInfo = sourceInfos[i];
         if (sourceInfo.kind === 'video') {
           videoSource[_j] = sourceInfo.id;
           _j++;
-        } 
-    
+        }     
     }
 
     var constraints = {
@@ -65,22 +65,13 @@ angular.module('summitseyeApp')
         }
     };
 
-    if(navigator.getUserMedia) { // Standard
-      navigator.getUserMedia(constraints, function(stream) {
-        video.src = stream;
-        video.play();
-      });
-    } else if(navigator.webkitGetUserMedia) { // WebKit-prefixed
-      navigator.webkitGetUserMedia(constraints, function(stream){
-        video.src = window.webkitURL.createObjectURL(stream);
-        video.play();
-      });
-    } else if(navigator.mozGetUserMedia) { // WebKit-prefixed
-      navigator.mozGetUserMedia(constraints, function(stream){
-        video.src = window.URL.createObjectURL(stream);
-        video.play();
-      });
-    }
+    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+
+    navigator.getUserMedia(constraints, function(stream){
+      p_video.src = window.URL.createObjectURL(stream);
+      p_video.play(); 
+    }, function(){});
+    
   }
 
   return _utils;

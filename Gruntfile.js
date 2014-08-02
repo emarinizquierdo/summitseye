@@ -22,7 +22,7 @@ module.exports = function (grunt) {
     yeoman: {
       // configurable paths
       app: require('./bower.json').appPath || 'app',
-      dist: 'dist'
+      dist: '../pro-summitseye'
     },
     express: {
       options: {
@@ -157,7 +157,7 @@ module.exports = function (grunt) {
     // Automatically inject Bower components into the app
     'bower-install': {
       app: {
-        html: '<%= yeoman.app %>/views/index.html',
+        html: '<%= yeoman.app %>/index.html',
         ignorePath: '<%= yeoman.app %>/'
       }
     },
@@ -180,8 +180,8 @@ module.exports = function (grunt) {
     // concat, minify and revision files. Creates configurations in memory so
     // additional tasks can operate on them
     useminPrepare: {
-      html: ['<%= yeoman.app %>/views/index.html',
-             '<%= yeoman.app %>/views/index.jade'],
+      html: ['<%= yeoman.app %>/index.html',
+             '<%= yeoman.app %>/index.jade'],
       options: {
         dest: '<%= yeoman.dist %>/public'
       }
@@ -189,8 +189,8 @@ module.exports = function (grunt) {
 
     // Performs rewrites based on rev and the useminPrepare configuration
     usemin: {
-      html: ['<%= yeoman.dist %>/views/{,*/}*.html',
-             '<%= yeoman.dist %>/views/{,*/}*.jade'],
+      html: ['<%= yeoman.dist %>/public/views/{,*/}*.html',
+             '<%= yeoman.dist %>/public/views/{,*/}*.jade'],
       css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
       options: {
         assetsDirs: ['<%= yeoman.dist %>/public']
@@ -232,7 +232,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '<%= yeoman.app %>/views',
           src: ['*.html', 'partials/*.html'],
-          dest: '<%= yeoman.dist %>/views'
+          dest: '<%= yeoman.dist %>/public/views'
         }]
       }
     },
@@ -253,7 +253,7 @@ module.exports = function (grunt) {
     // Replace Google CDN references
     cdnify: {
       dist: {
-        html: ['<%= yeoman.dist %>/views/*.html']
+        html: ['<%= yeoman.dist %>/public/views/*.html']
       }
     },
 
@@ -270,13 +270,15 @@ module.exports = function (grunt) {
             '.htaccess',
             'bower_components/**/*',
             'images/{,*/}*.{webp}',
-            'fonts/**/*'
+            'fonts/**/*',
+            'aux/**/*',
+            'index.html'
           ]
         }, {
           expand: true,
           dot: true,
           cwd: '<%= yeoman.app %>/views',
-          dest: '<%= yeoman.dist %>/views',
+          dest: '<%= yeoman.dist %>/public/views',
           src: '**/*.jade'
         }, {
           expand: true,
@@ -368,7 +370,8 @@ module.exports = function (grunt) {
       'autoprefixer',
       'express:dev',
       'open',
-      'watch'
+      'express-keepalive'
+      //'watch'
     ]);
   });
 

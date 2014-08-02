@@ -18,7 +18,7 @@ angular.module('summitseyeApp')
 		, videoImageContext
 		, videoTexture
 		, projection
-		, terrainSize = 10000 // 60 x 60 km
+		, terrainSize = 1000 // 60 x 60 km
         , heightFactor = terrainSize ;
 
 	$scope.x = 0;
@@ -31,8 +31,7 @@ angular.module('summitseyeApp')
 	_init();
    
     function _init() {
-    	_configuration();
-		_videoControl();		
+    	_configuration();		
 	}
 
 	function degInRad(deg) {
@@ -52,7 +51,7 @@ angular.module('summitseyeApp')
     	video.setAttribute('height', window.innerHeight);
 
     	scene = new THREE.Scene();
-	    camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.1, 1000 );
+	    camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.1, 10000 );
 
 	    renderer = new THREE.WebGLRenderer({ alpha: true });
 	    renderer.rendererSize = {width: window.innerWidth, height: window.innerHeight, quality: 100, maxQuality: 400, minQuality: 20};
@@ -63,26 +62,23 @@ angular.module('summitseyeApp')
 		// Add DeviceOrientation Controls
 		controls = new DeviceOrientationController( camera, renderer.domElement );
 		controls.connect();
-
-	    material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-	    material.side = THREE.DoubleSide;
-	    geometry = new THREE.PlaneGeometry(60000,60000);
-	    grass = new THREE.Mesh( geometry, material );
-	    grass.name = "grass";
-	    //scene.add( grass );
 	    
 	    camera.position.z = 1;
 	    camera.position.y = 0;
 		Utils.getLocation( function( p_coordinates ){
 			_config2( p_coordinates );
+			_videoControl( video );
 		});
+
+
 	    
     }
 
-    function _videoControl(){
+    function _videoControl( p_video ){
+
     	MediaStreamTrack.getSources(function(sourceInfos) {
 
-			//Utils.videoDetection(sourceInfos);
+			Utils.videoDetection( p_video, sourceInfos);
 			_animate();
 
 		});
@@ -104,10 +100,9 @@ angular.module('summitseyeApp')
         .scale(terrainSize * 106.4)  
         .center(p_coordinates);        
 
-console.log(p_coordinates);
         var geometry = new THREE.PlaneGeometry();
         	
-        d3.xml('aux/waypoints.gpx', 'application/xml', gpxParser);
+        d3.xml('aux/VG_Madrid.gpx', 'application/xml', gpxParser);
 
        
 }
@@ -115,64 +110,55 @@ console.log(p_coordinates);
 
     function gpxParser(gpx) {
 
-    	/*
         var points = gpx.getElementsByTagName('wpt'),
             geometry = new THREE.Geometry();
             var x =0;
+            
         for (x = 0; x < points.length; x++) { // points.length
             var point = points[x],
                 alt = 10,// parseInt(point.getElementsByTagName('ele')[0].firstChild.nodeValue),
                 lat = parseFloat(point.getAttribute('lat')),
                 lng = parseFloat(point.getAttribute('lon')),
-                coord = projection([lng, lat]);
+                name = point.getElementsByTagName('cmt')[0].firstChild.nodeValue,
+                coord = translate(projection([lng, lat]));
 
-            geometry.vertices.push(new THREE.Vector3(coord[0], coord[1], (alt / 2470 * heightFactor) + (0.01 * heightFactor))); 
+            geometry.vertices.push(new THREE.Vector3(coord[0], coord[1], 1)); 
+
+			// Creamos geometria texto pasandole parametros
+			var  text3d = new THREE.TextGeometry( name, {
+			    size: 0.1,
+			    height: 0,
+			    curveSegments: 2,
+			    font: "helvetiker"
+			});
+			                
+			// Creamos material con color aleatorio
+			var textMaterial = new THREE.MeshBasicMaterial({color: 0xffffff});
+
+			// Creamos el mesh uniendo geometria y material
+			var text = new THREE.Mesh( text3d, textMaterial );
+
+			// Posicionamos texto
+			text.position.x = coord[0];
+			text.position.y = coord[1];
+			text.position.z = 1;
+
+			text.rotation.x = degInRad(90);
+			text.rotation.y = degInRad(180);
+
+			// Renderizamos
+			scene.add(text);
+
         }
-*/
-       // console.log(geometry.vertices);
         
         var gMaterial = new THREE.ParticleBasicMaterial({
       			color: 0xFF0000,
       			size: 1
     		});
-        
 
-		var axes = Utils.buildAxes( 10000 );
-		scene.add(axes);
-
-var geometry = new THREE.Geometry();
-var geometry2 = new THREE.Geometry();
-var geometry3 = new THREE.Geometry();
-
-var  alt2 = 10,// parseInt(point.getElementsByTagName('ele')[0].firstChild.nodeValue),
-  coord2 = translate(projection([-3.68541, 40.46690]));
-geometry.vertices.push(new THREE.Vector3(coord2[0], coord2[1], 1)); 
-// create the particle system
-var geometrySystem = new THREE.ParticleSystem(geometry, gMaterial);
-
-coord2 = translate(projection([-3.68612, 40.46677]));
-geometry2.vertices.push(new THREE.Vector3(coord2[0], coord2[1], 1)); 
-var gMaterial2 = new THREE.ParticleBasicMaterial({
-      			color: 0x000FF,
-      			size: 1
-    		});
-        // create the particle system
-		var geometrySystem2 = new THREE.ParticleSystem(geometry2, gMaterial2);
-
-
-coord2 = translate(projection([-3.68672, 40.46849]));
-geometry3.vertices.push(new THREE.Vector3(coord2[0], coord2[1], 1)); 
-var gMaterial3 = new THREE.ParticleBasicMaterial({
-      			color: 0x00FF00,
-      			size: 1
-    		});
-        // create the particle system
-		var geometrySystem3 = new THREE.ParticleSystem(geometry3, gMaterial3);
-		// add it to the scene
-		scene.add(geometrySystem2);
+		var geometrySystem = new THREE.ParticleSystem(geometry, gMaterial);
 		scene.add(geometrySystem);
-		scene.add(geometrySystem3);
-		 
+		
     }
 
   });

@@ -2,21 +2,20 @@
 
 var express = require('express'),
     path = require('path'),
-    fs = require('fs'),
-    mongoose = require('mongoose');
+    fs = require('fs');
 
 /**
  * Main application file
  */
 
 // Default node environment to development
-process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+process.env.NODE_ENV = (process.env.OPENSHIFT_APP_NAME) ? 'production' : 'development';
 
 // Application Config
 var config = require('./lib/config/config');
 
 // Connect to database
-var db = mongoose.connect(config.mongo.uri, config.mongo.options);
+//var db = mongoose.connect(config.mongo.uri, config.mongo.options);
 
 // Bootstrap models
 var modelsPath = path.join(__dirname, 'lib/models');
