@@ -9,53 +9,30 @@
     <bounds maxlat="41.165038906" maxlon="-3.087961106" minlat="39.917061115" minlon="-4.563700017"/>
   </metadata>
 
-
-<wpt lat="40.750050" lon="-3.164409">
-    <ele>882</ele>
-    <time>2013-12-10T12:47:31Z</time>
-    <name>VGM-210</name>
-    <cmt>Vertice: Trasierra.  Altura: 882m  San Martin de Valdeiglesias (Madrid) DME: 28133. 
-</cmt>
-    <desc>Vertice: Trasierra.  Altura: 882m  San Martin de Valdeiglesias (Madrid) DME: 28133. 
-</desc>
-    <sym>Pin, Green</sym>
-    <extensions>
-      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
-        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
-        <gpxx:Categories>
-          <gpxx:Category>Categoría 1</gpxx:Category>
-        </gpxx:Categories>
-      </gpxx:WaypointExtension>
-    </extensions>
-
-  </wpt>
-
-  <wpt lat="40.749789" lon="-3.167263">
-    <ele>882</ele>
-    <time>2013-12-10T12:47:31Z</time>
-    <name>VGM-210</name>
-    <cmt>Vertice: Trasierra.  Altura: 882m  San Martin de Valdeiglesias (Madrid) DME: 28133. 
-</cmt>
-    <desc>Vertice: Trasierra.  Altura: 882m  San Martin de Valdeiglesias (Madrid) DME: 28133. 
-</desc>
-    <sym>Pin, Green</sym>
-    <extensions>
-      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
-        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
-        <gpxx:Categories>
-          <gpxx:Category>Categoría 1</gpxx:Category>
-        </gpxx:Categories>
-      </gpxx:WaypointExtension>
-    </extensions>
-
-  </wpt>
-  
-  <wpt lat="40.520488909" lon="-3.489547223">
+<wpt lat="40.771321" lon="-3.218221">
     <ele>715</ele>
     <time>2013-12-10T12:47:29Z</time>
     <name>VGM-001</name>
-    <cmt>Vertice: Portillo.  Altura: 715m  Ajalvir (Madrid) DME: 28002. 
-Operaciones: 2. QSO's Totales: 529. Ultima Operacion: EA4GLI</cmt>
+    <cmt>Vertice: Motocross Yunquera de Henares</cmt>
+    <desc>Vertice: Portillo.  Altura: 715m  Ajalvir (Madrid) DME: 28002. 
+Operaciones: 2. QSO's Totales: 529. Ultima Operacion: EA4GLI el 2013-09-14</desc>
+    <sym>Pin, Red</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+        <gpxx:Categories>
+          <gpxx:Category>Categoría 2</gpxx:Category>
+        </gpxx:Categories>
+      </gpxx:WaypointExtension>
+    </extensions>
+
+  </wpt>
+
+  <wpt lat="40.686317" lon="-3.107284">
+    <ele>715</ele>
+    <time>2013-12-10T12:47:29Z</time>
+    <name>VGM-001</name>
+    <cmt>Vertice: Paramo de Tortola.</cmt>
     <desc>Vertice: Portillo.  Altura: 715m  Ajalvir (Madrid) DME: 28002. 
 Operaciones: 2. QSO's Totales: 529. Ultima Operacion: EA4GLI el 2013-09-14</desc>
     <sym>Pin, Red</sym>

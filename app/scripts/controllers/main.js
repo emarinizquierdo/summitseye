@@ -113,7 +113,7 @@ angular.module('summitseyeApp')
         var points = gpx.getElementsByTagName('wpt'),
             geometry = new THREE.Geometry();
             var x =0;
-            
+
         for (x = 0; x < points.length; x++) { // points.length
             var point = points[x],
                 alt = 10,// parseInt(point.getElementsByTagName('ele')[0].firstChild.nodeValue),
@@ -126,7 +126,7 @@ angular.module('summitseyeApp')
 
 			// Creamos geometria texto pasandole parametros
 			var  text3d = new THREE.TextGeometry( name, {
-			    size: 0.1,
+			    size: 1,
 			    height: 0,
 			    curveSegments: 2,
 			    font: "helvetiker"
@@ -153,7 +153,7 @@ angular.module('summitseyeApp')
         
         var gMaterial = new THREE.ParticleBasicMaterial({
       			color: 0xFF0000,
-      			size: 1
+      			size: 4
     		});
 
 		var geometrySystem = new THREE.ParticleSystem(geometry, gMaterial);
