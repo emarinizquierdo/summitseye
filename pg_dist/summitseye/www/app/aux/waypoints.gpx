@@ -1,0 +1,610 @@
+﻿<?xml version="1.0"?>
+<gpx creator="GPS Visualizer http://www.gpsvisualizer.com/" version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<wpt lat="40.83734" lon="-3.95839">
+  <name>001</name>
+  <desc>31-DEC-98 12:04</desc>
+</wpt>
+<wpt lat="45.57379" lon="6.76888">
+  <name>002</name>
+  <desc>03-ENE-99 09:45</desc>
+</wpt>
+<wpt lat="42.07387" lon="-3.04317">
+  <name>004</name>
+  <desc>17-ENE-99 09:46</desc>
+</wpt>
+<wpt lat="42.06165" lon="-3.05267">
+  <name>005</name>
+  <desc>17-ENE-99 16:50</desc>
+</wpt>
+<wpt lat="40.44467" lon="-3.58243">
+  <name>006</name>
+  <desc>22-ENE-99 15:54</desc>
+</wpt>
+<wpt lat="42.34945" lon="-3.69599">
+  <name>007</name>
+  <desc>23-ENE-99 11:08</desc>
+</wpt>
+<wpt lat="42.34505" lon="-3.69567">
+  <name>008</name>
+  <desc>23-ENE-99 17:24</desc>
+</wpt>
+<wpt lat="42.34165" lon="-3.6957">
+  <name>009</name>
+  <desc>23-ENE-99 18:08</desc>
+</wpt>
+<wpt lat="42.33667" lon="-3.70321">
+  <name>010</name>
+  <desc>23-ENE-99 18:11</desc>
+</wpt>
+<wpt lat="42.33583" lon="-3.70926">
+  <name>011</name>
+  <desc>23-ENE-99 18:11</desc>
+</wpt>
+<wpt lat="42.33954" lon="-3.71686">
+  <name>012</name>
+  <desc>23-ENE-99 18:12</desc>
+</wpt>
+<wpt lat="42.34124" lon="-3.7215">
+  <name>013</name>
+  <desc>23-ENE-99 18:13</desc>
+</wpt>
+<wpt lat="42.34208" lon="-3.72582">
+  <name>014</name>
+  <desc>23-ENE-99 18:13</desc>
+</wpt>
+<wpt lat="42.34268" lon="-3.73189">
+  <name>015</name>
+  <desc>23-ENE-99 18:14</desc>
+</wpt>
+<wpt lat="42.34321" lon="-3.73676">
+  <name>016</name>
+  <desc>23-ENE-99 18:14</desc>
+</wpt>
+<wpt lat="42.34093" lon="-3.74359">
+  <name>017</name>
+  <desc>23-ENE-99 18:15</desc>
+</wpt>
+<wpt lat="42.34086" lon="-3.75256">
+  <name>018</name>
+  <desc>23-ENE-99 18:15</desc>
+</wpt>
+<wpt lat="42.3403" lon="-3.76194">
+  <name>019</name>
+  <desc>23-ENE-99 18:16</desc>
+</wpt>
+<wpt lat="42.33959" lon="-3.76232">
+  <name>020</name>
+  <desc>23-ENE-99 18:17</desc>
+</wpt>
+<wpt lat="42.33266" lon="-3.69784">
+  <name>021</name>
+  <desc>23-ENE-99 19:23</desc>
+</wpt>
+<wpt lat="41.99012" lon="-2.91363">
+  <name>022</name>
+  <desc>24-ENE-99 09:24</desc>
+</wpt>
+<wpt lat="41.99106" lon="-2.91398">
+  <name>023</name>
+  <desc>24-ENE-99 09:26</desc>
+</wpt>
+<wpt lat="41.99059" lon="-2.91417">
+  <name>024</name>
+  <desc>24-ENE-99 09:32</desc>
+</wpt>
+<wpt lat="42.00357" lon="-2.90108">
+  <name>025</name>
+  <desc>24-ENE-99 11:08</desc>
+</wpt>
+<wpt lat="42.00451" lon="-2.89923">
+  <name>026</name>
+  <desc>24-ENE-99 11:19</desc>
+</wpt>
+<wpt lat="42.00427" lon="-2.88879">
+  <name>027</name>
+  <desc>24-ENE-99 12:06</desc>
+</wpt>
+<wpt lat="42.00477" lon="-2.88775">
+  <name>028</name>
+  <desc>24-ENE-99 12:09</desc>
+</wpt>
+<wpt lat="42.00906" lon="-2.88141">
+  <name>029</name>
+  <desc>24-ENE-99 12:51</desc>
+</wpt>
+<wpt lat="41.99009" lon="-2.91302">
+  <name>031</name>
+  <desc>24-ENE-99 15:37</desc>
+</wpt>
+<wpt lat="40.77387" lon="-3.972">
+  <name>032</name>
+  <desc>31-ENE-99 10:28</desc>
+</wpt>
+<wpt lat="40.76724" lon="-3.96856">
+  <name>033</name>
+  <desc>31-ENE-99 11:00</desc>
+</wpt>
+<wpt lat="40.77526" lon="-3.95535">
+  <name>034</name>
+  <desc>31-ENE-99 11:32</desc>
+</wpt>
+<wpt lat="40.77527" lon="-3.95534">
+  <name>035</name>
+  <desc>31-ENE-99 11:32</desc>
+</wpt>
+<wpt lat="40.77952" lon="-3.95284">
+  <name>036</name>
+  <desc>31-ENE-99 12:16</desc>
+</wpt>
+<wpt lat="40.78462" lon="-3.95081">
+  <name>037</name>
+  <desc>31-ENE-99 12:33</desc>
+</wpt>
+<wpt lat="40.78508" lon="-3.95077">
+  <name>038</name>
+  <desc>31-ENE-99 12:36</desc>
+</wpt>
+<wpt lat="40.79321" lon="-3.94299">
+  <name>039</name>
+  <desc>31-ENE-99 13:17</desc>
+</wpt>
+<wpt lat="40.79366" lon="-3.95304">
+  <name>040</name>
+  <desc>31-ENE-99 14:15</desc>
+</wpt>
+<wpt lat="40.79121" lon="-3.9629">
+  <name>041</name>
+  <desc>31-ENE-99 14:50</desc>
+</wpt>
+<wpt lat="40.80534" lon="-3.96786">
+  <name>042</name>
+  <desc>31-ENE-99 15:29</desc>
+</wpt>
+<wpt lat="41.99009" lon="-2.91364">
+  <name>1</name>
+  <desc>24-ENE-99 09:25</desc>
+</wpt>
+<wpt lat="42.00878" lon="-2.90522">
+  <name>BUNQER</name>
+  <desc>24-ENE-99 15:06</desc>
+</wpt>
+<wpt lat="42.34539" lon="-3.69492">
+  <name>BURGOS</name>
+  <desc>12-ENE-99 08:47</desc>
+</wpt>
+<wpt lat="40.79586" lon="-3.93871">
+  <name>CAB-ME</name>
+  <desc>31-ENE-99 13:53</desc>
+</wpt>
+<wpt lat="43.14634" lon="-4.88424">
+  <name>FPE001</name>
+  <desc>FTE TORONES</desc>
+</wpt>
+<wpt lat="43.14146" lon="-4.85228">
+  <name>FPE002</name>
+  <desc>FTE PEDABEJO</desc>
+</wpt>
+<wpt lat="43.16346" lon="-4.85586">
+  <name>FPE003</name>
+  <desc>FTE</desc>
+</wpt>
+<wpt lat="43.17409" lon="-4.86633">
+  <name>FPE004</name>
+  <desc>FTE JERMOSO</desc>
+</wpt>
+<wpt lat="43.21345" lon="-4.85491">
+  <name>FPE005</name>
+  <desc>FTE CABRONES</desc>
+</wpt>
+<wpt lat="43.22593" lon="-4.89007">
+  <name>FPE006</name>
+  <desc>FTE PRIETA</desc>
+</wpt>
+<wpt lat="43.236" lon="-4.85252">
+  <name>FPE007</name>
+  <desc>FTE</desc>
+</wpt>
+<wpt lat="43.23507" lon="-4.88174">
+  <name>FPE008</name>
+  <desc>FTE CUEVA NEGRA</desc>
+</wpt>
+<wpt lat="43.24414" lon="-4.89156">
+  <name>FPE009</name>
+  <desc>FTE GONZOMERA</desc>
+</wpt>
+<wpt lat="43.23649" lon="-4.83591">
+  <name>FPE010</name>
+  <desc>FTE DEL TORNO</desc>
+</wpt>
+<wpt lat="43.24048" lon="-4.82556">
+  <name>FPE011</name>
+  <desc>FTE COLINEO</desc>
+</wpt>
+<wpt lat="43.20391" lon="-4.81831">
+  <name>FPE012</name>
+  <desc>FTE URRIELLO</desc>
+</wpt>
+<wpt lat="43.14711" lon="-4.80863">
+  <name>FPE013</name>
+  <desc>FTE DEVA</desc>
+</wpt>
+<wpt lat="43.13812" lon="-4.83573">
+  <name>FPE014</name>
+  <desc>FTE</desc>
+</wpt>
+<wpt lat="43.13717" lon="-4.82494">
+  <name>FPE015</name>
+  <desc>FTE LA JAYA</desc>
+</wpt>
+<wpt lat="43.1392" lon="-4.78197">
+  <name>FPE016</name>
+  <desc>FTE DE TOBIN</desc>
+</wpt>
+<wpt lat="43.1524" lon="-4.77251">
+  <name>FPE017</name>
+  <desc>FTE COVARANCE</desc>
+</wpt>
+<wpt lat="43.14896" lon="-4.7472">
+  <name>FPE018</name>
+  <desc>FTE</desc>
+</wpt>
+<wpt lat="43.15027" lon="-4.73494">
+  <name>FPE019</name>
+  <desc>FTE DE OVIEDO</desc>
+</wpt>
+<wpt lat="43.16935" lon="-4.79699">
+  <name>FPE020</name>
+  <desc>FTE RESALAO</desc>
+</wpt>
+<wpt lat="43.17111" lon="-4.78505">
+  <name>FPE021</name>
+  <desc>FTE ALIVA</desc>
+</wpt>
+<wpt lat="43.17489" lon="-4.71472">
+  <name>FPE022</name>
+  <desc>FTE ANTAJUELAS</desc>
+</wpt>
+<wpt lat="43.18538" lon="-4.76516">
+  <name>FPE023</name>
+  <desc>FTE</desc>
+</wpt>
+<wpt lat="43.20765" lon="-4.76611">
+  <name>FPE024</name>
+  <desc>FTE DEL PRADO</desc>
+</wpt>
+<wpt lat="43.2048" lon="-4.77587">
+  <name>FPE025</name>
+  <desc>FTE FRESNEDAL</desc>
+</wpt>
+<wpt lat="43.22757" lon="-4.78823">
+  <name>FPE026</name>
+  <desc>FTE TENEROSA</desc>
+</wpt>
+<wpt lat="43.23222" lon="-4.77852">
+  <name>FPE027</name>
+  <desc>FTE DEL MONTE</desc>
+</wpt>
+<wpt lat="43.23543" lon="-4.77461">
+  <name>FPE028</name>
+  <desc>FTE</desc>
+</wpt>
+<wpt lat="43.25592" lon="-4.78906">
+  <name>FPE029</name>
+  <desc>FTE PARGA</desc>
+</wpt>
+<wpt lat="43.26167" lon="-4.78122">
+  <name>FPE030</name>
+  <desc>FTE LLOVIN</desc>
+</wpt>
+<wpt lat="43.23054" lon="-4.74122">
+  <name>FPE031</name>
+  <desc>FTE DEL MEDIO</desc>
+</wpt>
+<wpt lat="43.22809" lon="-4.75439">
+  <name>FPE032</name>
+  <desc>FTE MOYEYERES</desc>
+</wpt>
+<wpt lat="43.25102" lon="-4.7418">
+  <name>FPE033</name>
+  <desc>FTE LA LLANADA</desc>
+</wpt>
+<wpt lat="43.23335" lon="-4.67388">
+  <name>FPE034</name>
+  <desc>FTE DEL MONTE</desc>
+</wpt>
+<wpt lat="43.23002" lon="-4.67071">
+  <name>FPE035</name>
+  <desc>FTE LOS LOBOS</desc>
+</wpt>
+<wpt lat="43.20799" lon="-4.69909">
+  <name>FPE036</name>
+  <desc>FTE LA ESCALERA</desc>
+</wpt>
+<wpt lat="43.20194" lon="-4.68163">
+  <name>FPE037</name>
+  <desc>FTE TRULLEDES</desc>
+</wpt>
+<wpt lat="43.16719" lon="-4.70282">
+  <name>FPE038</name>
+  <desc>FTE DE ROJES</desc>
+</wpt>
+<wpt lat="43.17656" lon="-4.6468">
+  <name>FPE040</name>
+  <desc>FTE LA PAGOLINA</desc>
+</wpt>
+<wpt lat="43.17389" lon="-4.62889">
+  <name>FPE041</name>
+  <desc>FTE LLES</desc>
+</wpt>
+<wpt lat="43.17238" lon="-4.62454">
+  <name>FPE042</name>
+  <desc>FTE ANAVELES</desc>
+</wpt>
+<wpt lat="43.19058" lon="-4.65825">
+  <name>FPE043</name>
+  <desc>FTE LOS LLANOS</desc>
+</wpt>
+<wpt lat="43.19335" lon="-4.6534">
+  <name>FPE044</name>
+  <desc>FTE</desc>
+</wpt>
+<wpt lat="43.19486" lon="-4.65836">
+  <name>FPE045</name>
+  <desc>FTE</desc>
+</wpt>
+<wpt lat="43.20104" lon="-4.63515">
+  <name>FPE046</name>
+  <desc>FTE</desc>
+</wpt>
+<wpt lat="43.20348" lon="-4.63767">
+  <name>FPE047</name>
+  <desc>FTE</desc>
+</wpt>
+<wpt lat="43.20735" lon="-4.63501">
+  <name>FPE048</name>
+  <desc>FTE CULUDRE</desc>
+</wpt>
+<wpt lat="43.2908" lon="-5.05694">
+  <name>FPE049</name>
+  <desc>FTE PRIETA</desc>
+</wpt>
+<wpt lat="43.3136" lon="-5.04076">
+  <name>FPE050</name>
+  <desc>FTE GINES</desc>
+</wpt>
+<wpt lat="43.25749" lon="-5.00593">
+  <name>FPE051</name>
+  <desc>FTE POZO ALEMAN</desc>
+</wpt>
+<wpt lat="43.22552" lon="-4.98087">
+  <name>FPE052</name>
+  <desc>FTE FUENTONA</desc>
+</wpt>
+<wpt lat="43.30595" lon="-5.02786">
+  <name>FPE053</name>
+  <desc>FTE PRIETA</desc>
+</wpt>
+<wpt lat="43.30466" lon="-4.99885">
+  <name>FPE054</name>
+  <desc>FTE PEREDO</desc>
+</wpt>
+<wpt lat="43.14588" lon="-4.88453">
+  <name>FPE055</name>
+  <desc>FTE TORONES</desc>
+</wpt>
+<wpt lat="43.15375" lon="-4.95211">
+  <name>FPE056</name>
+  <desc>FTE BERIN</desc>
+</wpt>
+<wpt lat="43.15155" lon="-4.96218">
+  <name>FPE057</name>
+  <desc>FTE ARGOYA</desc>
+</wpt>
+<wpt lat="43.16883" lon="-4.92583">
+  <name>FPE058</name>
+  <desc>FTE</desc>
+</wpt>
+<wpt lat="43.30129" lon="-4.98579">
+  <name>FPE059</name>
+  <desc>FTE LA JARDA</desc>
+</wpt>
+<wpt lat="43.29788" lon="-4.9749">
+  <name>FPE060</name>
+  <desc>FTE ENTREPENAS</desc>
+</wpt>
+<wpt lat="43.29591" lon="-4.97144">
+  <name>FPE061</name>
+  <desc>FTE ESCARANDI</desc>
+</wpt>
+<wpt lat="43.30825" lon="-4.96074">
+  <name>FPE062</name>
+  <desc>FTE PASTORES</desc>
+</wpt>
+<wpt lat="43.29487" lon="-4.93997">
+  <name>FPE063</name>
+  <desc>FTE LOS BRAZOS</desc>
+</wpt>
+<wpt lat="43.30006" lon="-4.92596">
+  <name>FPE064</name>
+  <desc>FTE LAS POLVORAS</desc>
+</wpt>
+<wpt lat="43.27275" lon="-4.96977">
+  <name>FPE065</name>
+  <desc>FTE LA TEXA</desc>
+</wpt>
+<wpt lat="43.27156" lon="-4.96049">
+  <name>FPE066</name>
+  <desc>FTE BELBIN</desc>
+</wpt>
+<wpt lat="43.25746" lon="-4.95573">
+  <name>FPE067</name>
+  <desc>FTE CANOLETA</desc>
+</wpt>
+<wpt lat="43.26682" lon="-4.94832">
+  <name>FPE068</name>
+  <desc>FTE EL FRIERU</desc>
+</wpt>
+<wpt lat="43.2573" lon="-4.91199">
+  <name>FPE069</name>
+  <desc>FTE VEGA MAYOR</desc>
+</wpt>
+<wpt lat="43.27075" lon="-4.94229">
+  <name>FPE070</name>
+  <desc>FTE VEGA ESPINES</desc>
+</wpt>
+<wpt lat="43.27423" lon="-4.92268">
+  <name>FPE071</name>
+  <desc>FTE SOTRES</desc>
+</wpt>
+<wpt lat="43.22559" lon="-5.01535">
+  <name>FPE072</name>
+  <desc>FTE LA VILLA</desc>
+</wpt>
+<wpt lat="43.21936" lon="-5.02376">
+  <name>FPE073</name>
+  <desc>FTE PRIETA</desc>
+</wpt>
+<wpt lat="43.24527" lon="-4.9969">
+  <name>FPE074</name>
+  <desc>FTE LOS VAHOS</desc>
+</wpt>
+<wpt lat="43.19468" lon="-5.03193">
+  <name>FPE075</name>
+  <desc>FTE BATUDA</desc>
+</wpt>
+<wpt lat="43.21144" lon="-4.92194">
+  <name>FPE076</name>
+  <desc>FTE CUCIAO</desc>
+</wpt>
+<wpt lat="43.19212" lon="-4.93302">
+  <name>FPE077</name>
+  <desc>FTE CAPOZO</desc>
+</wpt>
+<wpt lat="43.24459" lon="-4.89157">
+  <name>FPE078</name>
+  <desc>FTE GONZOMERA</desc>
+</wpt>
+<wpt lat="43.22615" lon="-4.89039">
+  <name>FPE079</name>
+  <desc>FTE PRIETA</desc>
+</wpt>
+<wpt lat="43.14429" lon="-5.01759">
+  <name>FPE080</name>
+  <desc>FTE MIRADOIRO</desc>
+</wpt>
+<wpt lat="43.15034" lon="-5.03163">
+  <name>FPE081</name>
+  <desc>FTE</desc>
+</wpt>
+<wpt lat="43.14899" lon="-5.01898">
+  <name>FPE082</name>
+  <desc>FTE LLABE,O</desc>
+</wpt>
+<wpt lat="43.16627" lon="-4.98356">
+  <name>FPE083</name>
+  <desc>FTE FUENTONA</desc>
+</wpt>
+<wpt lat="43.16722" lon="-4.98052">
+  <name>FPE084</name>
+  <desc>FTE FUENTINA</desc>
+</wpt>
+<wpt lat="43.17384" lon="-4.9752">
+  <name>FPE085</name>
+  <desc>FTE DEL FRADE</desc>
+</wpt>
+<wpt lat="43.16337" lon="-4.95549">
+  <name>FPE086</name>
+  <desc>FTE DE LLOS</desc>
+</wpt>
+<wpt lat="38.85556" lon="-94.79901">
+  <name>GARMIN</name>
+  <desc>________________</desc>
+</wpt>
+<wpt lat="40.76725" lon="-3.96855">
+  <name>MALICI</name>
+  <desc>31-ENE-99 11:00</desc>
+</wpt>
+<wpt lat="40.4452" lon="-3.58237">
+  <name>MADRID</name>
+  <desc>22-ENE-99 15:55</desc>
+</wpt>
+<wpt lat="-26.61708" lon="152.64987">
+  <name>MF1</name>
+  <desc>CHARLIE MORELAND</desc>
+</wpt>
+<wpt lat="-26.50717" lon="152.58371">
+  <name>MF2</name>
+  <desc>BOORUMBA DAM</desc>
+</wpt>
+<wpt lat="-26.67704" lon="152.57199">
+  <name>MF3</name>
+  <desc>RAINFOREST</desc>
+</wpt>
+<wpt lat="-26.63233" lon="152.65279">
+  <name>MF4</name>
+  <desc>LOWER CAMPING AR</desc>
+</wpt>
+<wpt lat="41.99105" lon="-2.91387">
+  <name>MOB</name>
+  <desc>26-ENE-99 21:27</desc>
+</wpt>
+<wpt lat="43.16429" lon="-4.67076">
+  <name>PFE039</name>
+  <desc>FTE VIEJA</desc>
+</wpt>
+<wpt lat="43.21411" lon="-4.85585">
+  <name>REF001</name>
+  <desc>REF JOU CABRONES</desc>
+</wpt>
+<wpt lat="43.17407" lon="-4.86787">
+  <name>REF002</name>
+  <desc>REF CDO JERMOSO</desc>
+</wpt>
+<wpt lat="43.20434" lon="-4.8191">
+  <name>REF003</name>
+  <desc>REF VEGA URRIELL</desc>
+</wpt>
+<wpt lat="43.22797" lon="-4.79132">
+  <name>REF004</name>
+  <desc>REF TERENOSA</desc>
+</wpt>
+<wpt lat="43.21498" lon="-4.71012">
+  <name>REF005</name>
+  <desc>REF ANDARA</desc>
+</wpt>
+<wpt lat="43.16909" lon="-4.78468">
+  <name>REF006</name>
+  <desc>REF ALIVA</desc>
+</wpt>
+<wpt lat="43.23657" lon="-4.99231">
+  <name>REF007</name>
+  <desc>REF VEGA REDONDA</desc>
+</wpt>
+<wpt lat="43.24343" lon="-4.92017">
+  <name>REF008</name>
+  <desc>REF VEGA DE ARIO</desc>
+</wpt>
+<wpt lat="43.16658" lon="-5.00418">
+  <name>REF009</name>
+  <desc>REF VEGABA,O</desc>
+</wpt>
+<wpt lat="42.0114" lon="-2.87854">
+  <name>URB</name>
+  <desc>24-ENE-99 13:16</desc>
+</wpt>
+<wpt lat="40.806114" lon="-3.971515">
+  <name>149</name>
+</wpt>
+<wpt lat="40.805431" lon="-3.976556">
+  <name>150</name>
+</wpt>
+<wpt lat="40.797613" lon="-3.979225">
+  <name>151</name>
+</wpt>
+<wpt lat="40.787062" lon="-3.977545">
+  <name>152</name>
+</wpt>
+<wpt lat="40.784405" lon="-3.980213">
+  <name>153</name>
+</wpt>
+</gpx>
